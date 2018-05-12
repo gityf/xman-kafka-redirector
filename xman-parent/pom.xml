@@ -148,19 +148,4 @@
             </plugins>
         </pluginManagement>
     </build>
-
-    <distributionManagement>
-        <repository>
-            <id>psc</id>
-            <name>Releases</name>
-            <url>http://192.168.56.161:8081/repository/psc-releases</url>
-        </repository>
-        <snapshotRepository>
-            <id>psc</id>
-            <name>Snapshot</name>
-            <url>http://192.168.56.161:8081/repository/psc-snapshots</url>
-        </snapshotRepository>
-    </distributionManagement>
-
-
 </project>
