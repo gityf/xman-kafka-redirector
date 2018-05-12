@@ -1,2 +1,2 @@
-# xman-kafka-redirector
-redirector of KAFKA comsumer from kafka to HTTP protocol.
+# xman-mq-redirector
+redirector of KAFKA or RocketMQ message to HTTP gateway.
