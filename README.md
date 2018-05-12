@@ -43,11 +43,11 @@ public class KafkaTopicHandler {
 
     /**
      * Message flow:
-     *  1. raw message is consumed from KAFKA topic 'topic-test-plain'.
-     *  2. function 'handlePlainData' will be called with param data, do actions balabala...
-     *  3. Bean of 'TestItemData' is created and it's Json string will be produced to KAFKA topic 'topic-test-json'.
+     *  1. Raw message is consumed from KAFKA topic 'topic-test-plain'.
+     *  2. Function 'handlePlainData' will be called with param data, do actions balabala...
+     *  3. Bean of 'TestItemData' is created and it's Json message will be produced to KAFKA topic 'topic-test-json'.
      *
-     *  Data from KAFKA topic is handled and push to another topic with action at other endpoint.
+     *  Data from KAFKA topic is handled and push to another topic for other endpoint with other actions.
      * @param data
      * @return
      */
@@ -63,8 +63,8 @@ public class KafkaTopicHandler {
 
     /**
      * Message flow:
-     *  1. raw message is consumed from KAFKA topic 'topic-test-plain'.
-     *  2. function 'handleJsonData' will be called with param data, do actions balabala...
+     *  1. Json message is consumed from KAFKA topic 'topic-test-plain'.
+     *  2. Function 'handleJsonData' will be called with param data, do actions balabala...
      *  3. The data is sent to URL 'redirectorUrl' as HTTP protocol.
      *
      *  Data from KAFKA topic is redirect to HTTP endpoint.
