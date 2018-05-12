@@ -30,7 +30,7 @@ the message will be consumed from MQ then sent to endpoint by HTTP protocol.
     'keys + values + cr' is like to tag in RocketMQ.
 
 # kafka-redirector
-`code java
+```java
 @MQHanlder
 @Component
 public class KafkaTopicHandler {
@@ -77,4 +77,4 @@ public class KafkaTopicHandler {
         httpService.httpPost(redirectorUrl, JSON.toJSONString(data));
     }
 }
-`
+```
